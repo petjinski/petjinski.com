@@ -9,7 +9,7 @@ export default [
   {
     path: '/404',
     name: 'NotFound::Index',
-    component: () => import('../views/Index.vue'),
+    component: () => import('../views/Index/index.js'),
   },
   {
     path: '/*',

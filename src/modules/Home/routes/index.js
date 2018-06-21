@@ -9,7 +9,7 @@ export default [
   {
     path: '/home',
     name: 'Home::Index',
-    component: () => import('../views/Index.vue'),
+    component: () => import('../views/Index/index.js'),
   },
   {
     path: '/',

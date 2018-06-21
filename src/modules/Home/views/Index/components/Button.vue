@@ -2,15 +2,9 @@
 import blockMixin from '@/mixins/block';
 
 export default {
-  /**
-   * The name of the view.
-   */
-  name: 'HomeIndexView',
+  name: 'HomeButtonComponent',
 
-  /**
-   * The name of the block.
-   */
-  block: 'view',
+  block: 'button',
 
   mixins: [
     blockMixin,
@@ -20,10 +14,12 @@ export default {
 
 <template>
   <div :class="classNames">
-    HelloWorld!
+    Hello World
   </div>
 </template>
 
 <style lang="stylus">
-
+.button
+  background-color: #000
+  color: #fff
 </style>

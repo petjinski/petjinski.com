@@ -58,12 +58,12 @@ export default {
    */
   methods: {
     /**
-     * Getter for the name of the CSS class.
-     * If a module is used, the hashed CSS class is returned.
+     * Getter for the name of the BEM class.
+     * If a module is used, the hashed BEM class is returned.
      *
-     * @param {string} className The CSS class name.
+     * @param {string} className The BEM class name.
      *
-     * @returns {string} The corrected CSS class.
+     * @returns {string} The corrected BEM class.
      */
     getClassName(className) {
       if (this.$style) {

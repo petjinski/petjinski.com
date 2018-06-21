@@ -5,7 +5,6 @@
  * Mixin for the element in BEM-styling.
  */
 
-import CSS from '@/utilities/CSS';
 import StyleMixin from '@/mixins/style';
 
 export default {
@@ -22,17 +21,6 @@ export default {
   ],
 
   /**
-   * The data used for this mixins.
-   *
-   * @returns {Object} The view model.
-   */
-  data() {
-    return {
-      css: new CSS(),
-    };
-  },
-
-  /**
    * The computed properties that the mixin injects.
    */
   computed: {
@@ -46,12 +34,12 @@ export default {
     },
 
     /**
-     * Will get the CSS module class names.
+     * Will get the BEM module class names.
      *
-     * @returns {Array} The CSS module class names.
+     * @returns {Array} The BEM module class names.
      */
     classNames() {
-      return this.css
+      return this.$css
         .getElementClassNames(this.block, this.$options.element, this.getVariants)
         .map(className => this.getClassName(className));
     },
