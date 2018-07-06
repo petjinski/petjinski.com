@@ -8,13 +8,13 @@
 export default [
   {
     path: '/404',
-    name: 'NotFound::Index',
-    component: () => import('../views/Index/index.js'),
+    name: 'Core::NotFound.Index',
+    component: () => import('../views/NotFound/Index/index.js'),
   },
   {
     path: '/*',
     redirect: {
-      name: 'NotFound::Index',
+      name: 'Core::NotFound.Index',
     },
   },
 ];

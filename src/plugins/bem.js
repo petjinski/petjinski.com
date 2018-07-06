@@ -10,11 +10,7 @@
 import Vue from 'vue';
 import BEM from '@/utilities/BEM';
 
-const options = {
-  elementSeparator: '++',
-};
-
-const bem = new BEM(options);
+const bem = new BEM();
 
 // Bind BEM to Vue.
 Vue.$css = bem;

@@ -43,7 +43,7 @@ export default {
     getVariants() {
       // To make sure that we're not editing the property,
       // we create a copy of the array.
-      const variants = this.variants.slice(0);
+      const variants = this.variants.slice();
 
       if (this.variant) {
         variants.push(this.variant);

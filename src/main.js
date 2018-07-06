@@ -11,6 +11,9 @@ import Vue from 'vue';
 import './plugins/vuex';
 import './plugins/axios';
 import './plugins/bem';
+import './plugins/prism';
+import './plugins/markdown-it';
+import './plugins/normalize.css';
 import { i18n } from './plugins/vue-i18n';
 import { router } from './plugins/vue-router';
 import './plugins/vuex-router-sync';
@@ -18,7 +21,7 @@ import './plugins/vuex-router-sync';
 // Import the modules used in this project.
 import './modules/Home';
 import './modules/Post';
-import './modules/NotFound';
+import './modules/Core';
 
 /* ============
  * Main App

@@ -6,8 +6,8 @@
  * specify the languages you want to use here.
  */
 
-import en from './en';
-import nl from './nl';
+import en from './en/index';
+import nl from './nl/index';
 
 export default {
   en,

@@ -6,11 +6,11 @@
  */
 
 import Module from '@/utilities/Module';
-import routes from './routes';
-import locale from './locale';
-import store from './store';
+import routes from './routes/index';
+import locale from './locale/index';
+import store from './store/index';
 
-new Module('NotFound')
+new Module('Core')
   .registerStore(store)
   .registerRoutes(routes)
   .registerLocale(locale);

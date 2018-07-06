@@ -13,12 +13,12 @@ export default {
     };
   },
   computed: {
-    ...mapState('NotFound', {
+    ...mapState('Core', {
       hello: state => state.hello,
     }),
   },
   methods: {
-    ...mapActions('NotFound', [
+    ...mapActions('Core', [
       'setHello',
     ]),
   },
@@ -27,7 +27,7 @@ export default {
 
 <template>
   <div>
-    {{ $t('NotFound.errors.404') }}
+    {{ $t('Core.errors.404') }}
     <form @submit.prevent="setHello(helloTo)">
       <input
         v-model="helloTo"

@@ -7,8 +7,8 @@
 
 export default [
   {
-    path: '/post',
+    path: '/posts',
     name: 'Post::List',
-    component: () => import('../views/List/index.js'),
+    component: () => import('../views/List/Index'),
   },
 ];
